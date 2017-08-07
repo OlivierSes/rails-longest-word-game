@@ -15,7 +15,7 @@ class GameController < ApplicationController
 
   def generate_grid(grid_size)
     grid = []
-    n = grid_size / 2
+    n = grid_size / 1.5.round(0)
     n.times do
       grid.push(["A", "E", "I", "O", "U", "Y"].sample)
     end
