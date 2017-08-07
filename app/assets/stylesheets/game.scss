@@ -1,0 +1,21 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  color: rgb(180, 180, 180)  !important;
+  font-family: 'Varela', sans-serif !important;
+}
+
+input {
+  margin-top: 15px !important;
+}
+
+.btn-primary{
+  background-color: rgb(180, 180, 180) !important;
+  border: 1px solid #6892D5 !important;
+  color: #6892D5 !important;
+}
+
+.form-control{
+  border: 1px solid #6892D5 !important;
+}

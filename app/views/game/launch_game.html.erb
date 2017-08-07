@@ -1,0 +1,19 @@
+<div class = "row text-center">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <h1> The grid is </h1>
+    <div style="text-center">
+    <%= @grid %>
+
+    </div>
+
+    <form action="/score">
+      <div class="form-group">
+        <h1>Enter your grid (in English mofo) </h1>
+        <input type="text" class="form-control" id="question" name="answer" placeholder="Enter the size of the grid">
+        <input type="submit" class="btn btn-primary" value="Are you ready to play??">
+        <input type="hidden" name="start_time" value="<%=@start_time%>">
+        <input type="hidden" name="grid" value="<%=@grid.join%>">
+      </div>
+    </form>
+  </div>
+</div>

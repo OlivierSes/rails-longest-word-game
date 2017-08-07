@@ -1,0 +1,19 @@
+<div class = "row text-center">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <h1> <%=@message%> </h1>
+
+    <div>
+      <h1> your score is <%=@score%> </h1>
+    </div>
+
+    <div>
+      <h1> It took you <%=@time%> seconds </h1>
+    </div>
+
+    <form action="/start">
+      <div class="form-group">
+      <input type="submit" class="btn btn-primary" value="Play again??">
+      </div>
+    </form>
+  </div>
+</div>
