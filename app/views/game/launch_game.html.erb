@@ -1,10 +1,14 @@
 <div class = "row text-center">
   <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <h1> The grid is </h1>
-    <div style="text-center">
-    <%= @grid %>
 
-    </div>
+    <h1> The grid is </h1>
+    <table class = "center">
+      <tr>
+        <% @grid.each do |letter| %>
+          <td> <%= letter%> </td>
+        <%end%>
+      </tr>
+    </table>
 
     <form action="/score">
       <div class="form-group">
@@ -15,5 +19,6 @@
         <input type="hidden" name="grid" value="<%=@grid.join%>">
       </div>
     </form>
+
   </div>
 </div>

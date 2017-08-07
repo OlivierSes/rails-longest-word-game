@@ -49,7 +49,8 @@ class GameController < ApplicationController
   def result(result_api, time)
     result = { time: time, translation: " ", score: 0, message: "not an english word" }
     return result if result_api["found"] == false
-    result[:score] = result_api["length"] - time / 10
+    intermediary_res = result_api["length"] - time / 10
+    intermediary_res > 0 ? result[:score] = intermediary_res : result[:score] = 0
     result[:message] = "Well done"
     return result
   end
